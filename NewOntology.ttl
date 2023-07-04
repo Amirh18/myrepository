@@ -1,0 +1,78 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://visualdataweb.org/PCL_text_mining/> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/#> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@base 			<http://visualdataweb.org/PCL_text_mining/> .
+
+<http://visualdataweb.org/PCL_text_mining/> rdf:type owl:Ontology ;
+                                            dc:title "PCL text mining"@en;
+                                            dc:description "New ontology description"@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 3 ###
+#  --------------------------- Property 0------------------------- 
+:hasExpression rdf:type owl:DatatypeProperty ;
+               rdfs:label "hasExpression"@en; 
+               rdfs:domain :Ball;
+               rdfs:range xsd:string . 
+#  --------------------------- Property 1------------------------- 
+:hasExpression rdf:type owl:DatatypeProperty ;
+               rdfs:label "hasExpression"@en; 
+               rdfs:domain :Gate;
+               rdfs:range xsd:string . 
+#  --------------------------- Property 2------------------------- 
+:hasExpression rdf:type owl:DatatypeProperty ;
+               rdfs:label "hasExpression"@en; 
+               rdfs:domain :Globe;
+               rdfs:range xsd:string . 
+###  Class Definitions (Number of Classes) 11 ###
+#  --------------------------- Class  0------------------------- 
+:Butterfly_valve rdf:type owl:Class; 
+                 rdfs:subClassOf :Piping ;
+                 rdfs:label "Butterfly valve"@en . 
+#  --------------------------- Class  1------------------------- 
+:BIM_Elements rdf:type owl:Class; 
+              rdfs:label "BIM Elements"@en . 
+#  --------------------------- Class  2------------------------- 
+:Piping rdf:type owl:Class; 
+        rdfs:subClassOf :BIM_Elements ;
+        rdfs:label "Piping"@en . 
+#  --------------------------- Class  3------------------------- 
+:ValveFlanged rdf:type owl:Class; 
+              rdfs:subClassOf :Piping ;
+              rdfs:label "ValveFlanged"@en . 
+#  --------------------------- Class  4------------------------- 
+:Valve rdf:type owl:Class; 
+       rdfs:subClassOf :Piping ;
+       rdfs:label "Valve"@en . 
+#  --------------------------- Class  5------------------------- 
+:Ball rdf:type owl:Class; 
+      rdfs:subClassOf :Valve ;
+      rdfs:label "Ball"@en . 
+#  --------------------------- Class  6------------------------- 
+:Gate rdf:type owl:Class; 
+      rdfs:subClassOf :Valve ;
+      rdfs:label "Gate"@en . 
+#  --------------------------- Class  7------------------------- 
+:Check_Valve rdf:type owl:Class; 
+             rdfs:subClassOf :Piping ;
+             rdfs:label "Check Valve"@en . 
+#  --------------------------- Class  8------------------------- 
+:Globe rdf:type owl:Class; 
+       rdfs:subClassOf :Valve ;
+       rdfs:label "Globe"@en . 
+#  --------------------------- Class  9------------------------- 
+:Knife rdf:type owl:Class; 
+       rdfs:subClassOf :Valve ;
+       rdfs:label "Knife"@en . 
+#  --------------------------- Class  10------------------------- 
+:Class30 rdf:type owl:Class; 
+         rdfs:subClassOf :ValveFlanged ;
+         rdfs:label "Knife"@en . 
